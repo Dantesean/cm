@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Avenir-Next-Condensed';
+    src: url('fonts/AvenirNextCondensed-Regular.eot');
+    src: url('fonts/AvenirNextCondensed-Regular.eot') format('embedded-opentype'),
+    url('fonts/AvenirNextCondensed-Regular.woff') format('woff'),
+    url('fonts/AvenirNextCondensed-Regular.woff2') format('woff2'),
+    url('fonts/AvenirNextCondensed-Regular.svg') format('svg'),
+    url('fonts/AvenirNextCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

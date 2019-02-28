@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/craft/modules" isTestSource="false" packagePrefix="modules\" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/cebe/markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/craftcms/cms" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/craftcms/oauth2-craftid" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/craftcms/plugin-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/craftcms/redactor" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/craftcms/server-check" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/creocoder/yii2-nested-sets" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/danielstjules/stringy" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/elvanto/litemoji" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/enshrined/svg-sanitize" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/ezyang/htmlpurifier" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/league/oauth2-client" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/mikehaertl/php-shellcommand" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/pixelandtonic/imagine" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/seld/cli-prompt" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/seld/jsonlint" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/true/punycode" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yii2tech/ar-softdelete" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2-bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2-composer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2-queue" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/yiisoft/yii2-swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/zendframework/zend-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/zendframework/zend-feed" />
+      <excludeFolder url="file://$MODULE_DIR$/craft/vendor/zendframework/zend-stdlib" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="818px" height="408px" viewBox="0 0 818 408">
+  <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+  <title>Figure 1</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+      <stop stop-color="#2E3E47" stop-opacity="0" offset="0%"></stop>
+      <stop stop-color="#2E3E47" offset="25.6572002%"></stop>
+      <stop stop-color="#2E3E47" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Landing" transform="translate(-98.000000, -1853.000000)">
+      <g id="Figure-1" transform="translate(0.000000, 1767.000000)">
+        <g id="Group-2" transform="translate(98.000000, 86.000000)">
+          <g id="Scale" transform="translate(8.000000, 0.000000)">
+            <path d="M0,261.5 L809.5,261.5" id="Line" stroke="#2E3E47" stroke-linecap="square"></path>
+            <g id="1992" transform="translate(9.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="0" y="232">1992</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+            <g id="1997" transform="translate(159.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#2E3E47">
+                <tspan x="0" y="232">1997</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+            <g id="2002" transform="translate(309.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#2E3E47">
+                <tspan x="0" y="232">2002</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+            <g id="2007" transform="translate(459.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#2E3E47">
+                <tspan x="0" y="232">2007</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+            <g id="2013" transform="translate(609.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#2E3E47">
+                <tspan x="0" y="232">2013</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+            <g id="2018" transform="translate(777.000000, 0.000000)">
+              <path d="M13.5,1.14361702 L13.5,213.856383" id="Line-2" stroke="url(#linearGradient-1)" stroke-linecap="square"></path>
+              <path d="M13.5,236.5 L13.5,279.888296" id="Line-2-Copy" stroke="#2E3E47" stroke-linecap="square"></path>
+              <text font-family="DINCondensed-Bold, DIN Condensed" font-size="18" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="0" y="232">2018</tspan>
+              </text>
+              <circle id="Oval" fill="#2E3E47" cx="13.5" cy="261.5" r="4.5"></circle>
+            </g>
+          </g>
+          <g id="Neptunes" transform="translate(26.000000, 186.000000)">
+            <circle id="Oval" fill="#FF000A" cx="4.5" cy="4.5" r="4.5"></circle>
+            <path d="M4.5,4.5 L772,4.5" id="Line-3" stroke="#FF000A" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" fill="#FF000A" cx="772.5" cy="4.5" r="4.5"></circle>
+          </g>
+          <g id="Top90s" transform="translate(0.000000, 156.000000)">
+            <circle id="Oval" fill="#FF8700" cx="4.5" cy="4.5" r="4.5"></circle>
+            <path d="M4.5,4.5 L180,4.5" id="Line-3" stroke="#FF8700" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" fill="#FF8700" cx="180.5" cy="4.5" r="4.5"></circle>
+          </g>
+          <g id="Top00s" transform="translate(176.000000, 126.000000)">
+            <circle id="Oval" fill="#FFC200" cx="4.5" cy="4.5" r="4.5"></circle>
+            <path d="M4.5,4.5 L278.5,4.5" id="Line-3" stroke="#FFC200" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" fill="#FFC200" cx="278.5" cy="4.5" r="4.5"></circle>
+          </g>
+          <g id="Top00s-Copy" transform="translate(450.000000, 96.000000)">
+            <circle id="Oval" fill="#00C9F8" cx="4.5" cy="4.5" r="4.5"></circle>
+            <path d="M4.5,4.5 L348,4.5" id="Line-3" stroke="#00C9F8" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" fill="#00C9F8" cx="348.5" cy="4.5" r="4.5"></circle>
+          </g>
+          <g id="Pharrell" transform="translate(450.000000, 66.000000)">
+            <circle id="Oval" fill="#3959AD" cx="4.5" cy="4.5" r="4.5"></circle>
+            <path d="M4.5,4.5 L348,4.5" id="Line-3" stroke="#3959AD" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval" fill="#3959AD" cx="348.5" cy="4.5" r="4.5"></circle>
+          </g>
+          <g id="Legenda" transform="translate(696.000000, 305.000000)">
+            <g id="Pharrell-(Solo)">
+              <circle id="Oval" fill="#3959AD" cx="5.5" cy="5.5" r="5.5"></circle>
+              <text id="PHARRELL-(SOLO)" font-family="DINCondensed-Bold, DIN Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="17" y="11">PHARRELL (SOLO)</tspan>
+              </text>
+            </g>
+            <g id="Top-10s" transform="translate(0.000000, 22.000000)">
+              <circle id="Oval-Copy" fill="#00C9F8" cx="5.5" cy="5.5" r="5.5"></circle>
+              <text id="TOP10s-(182-songs)" font-family="DINCondensed-Bold, DIN Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="17" y="11">TOP10s (182 songs)</tspan>
+              </text>
+            </g>
+            <g id="Top-00s" transform="translate(0.000000, 44.000000)">
+              <circle id="Oval-Copy" fill="#FFC200" cx="5.5" cy="5.5" r="5.5"></circle>
+              <text id="TOP00s-(122-songs)" font-family="DINCondensed-Bold, DIN Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="17" y="11">TOP00s (122 songs)</tspan>
+              </text>
+            </g>
+            <g id="Top-90s" transform="translate(0.000000, 66.000000)">
+              <circle id="Oval-Copy" fill="#FF8700" cx="5.5" cy="5.5" r="5.5"></circle>
+              <text id="TOP90s-(95-songs)" font-family="DINCondensed-Bold, DIN Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="17" y="11">TOP90s (95 songs)</tspan>
+              </text>
+            </g>
+            <g id="The-Neptunes" transform="translate(0.000000, 91.000000)">
+              <circle id="Oval-Copy-2" fill="#FF000A" cx="5.5" cy="5.5" r="5.5"></circle>
+              <text id="THE-NEPTUNES" font-family="DINCondensed-Bold, DIN Condensed" font-size="14" font-style="condensed" font-weight="bold" fill="#FFFFFF">
+                <tspan x="17" y="11">THE NEPTUNES</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

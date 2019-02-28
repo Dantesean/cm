@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="927bc1c1-071b-4453-9dc8-c52bae24079d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craft/templates/_layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craft/web/resources/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craft/web/resources/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craft/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/craft/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craft/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/craft/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craft/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/craft/templates/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/craft/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+              <folding>
+                <element signature="e#165#223#0#HTML" expanded="true" />
+                <element signature="e#1675#1733#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="761">
+              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/templates/_layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/config/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="e#6#236#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/craft/.env" />
+        <option value="$PROJECT_DIR$/craft/templates/_layout.html" />
+        <option value="$PROJECT_DIR$/craft/web/resources/css/fonts.css" />
+        <option value="$PROJECT_DIR$/craft/templates/index.html" />
+        <option value="$PROJECT_DIR$/craft/web/resources/css/index.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/craft/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/craft/vendor/composer" />
+      <path value="$PROJECT_DIR$/craft/vendor/mikehaertl/php-shellcommand" />
+      <path value="$PROJECT_DIR$/craft/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/craft/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/craft/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/craft/vendor/zendframework/zend-feed" />
+      <path value="$PROJECT_DIR$/craft/vendor/zendframework/zend-stdlib" />
+      <path value="$PROJECT_DIR$/craft/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/craft/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/craft/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/craft/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/craft/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/craft/vendor/yii2tech/ar-softdelete" />
+      <path value="$PROJECT_DIR$/craft/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/craft/vendor/true/punycode" />
+      <path value="$PROJECT_DIR$/craft/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/craft/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/craft/vendor/creocoder/yii2-nested-sets" />
+      <path value="$PROJECT_DIR$/craft/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/craft/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/craft/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/craft/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/craft/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/craft/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/craft/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/craft/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/craft/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/craft/vendor/craftcms/plugin-installer" />
+      <path value="$PROJECT_DIR$/craft/vendor/craftcms/cms" />
+      <path value="$PROJECT_DIR$/craft/vendor/craftcms/oauth2-craftid" />
+      <path value="$PROJECT_DIR$/craft/vendor/craftcms/server-check" />
+      <path value="$PROJECT_DIR$/craft/vendor/elvanto/litemoji" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2-queue" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/craft/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/craft/vendor/enshrined/svg-sanitize" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/craft/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/craft/vendor/seld/cli-prompt" />
+      <path value="$PROJECT_DIR$/craft/vendor/pixelandtonic/imagine" />
+      <path value="$PROJECT_DIR$/craft/vendor/craftcms/redactor" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="40" />
+    <option name="y" value="23" />
+    <option name="width" value="1556" />
+    <option name="height" value="1005" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cm" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/craft/web/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="927bc1c1-071b-4453-9dc8-c52bae24079d" name="Default Changelist" comment="" />
+      <created>1551274936458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551274936458</updated>
+      <workItem from="1551274937778" duration="1075000" />
+      <workItem from="1551351647056" duration="6772000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7847000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="40" y="23" width="1556" height="1005" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25297225" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/craft/.env.example">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/config/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#236#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding>
+            <element signature="e#165#223#0#HTML" expanded="true" />
+            <element signature="e#1675#1733#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

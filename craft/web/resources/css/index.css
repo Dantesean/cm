@@ -1,0 +1,103 @@
+/* --- General --- */
+html {
+    background-color: #001A29;
+}
+
+body, html, p {
+    padding: 0;
+    margin: 0;
+    font-family: Avenir-Next-Condensed;
+    font-size: 16px;
+    color: white;
+    line-height: 29px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.inner-content {
+    max-width: 1160px;
+    padding: 0 36px;
+    margin: 0 auto;
+}
+
+.block {
+    padding: 40px 0;
+}
+
+.block-50 {
+    flex: 50%;
+    margin-right: 52px;
+}
+
+h1 {
+    font-family: big-caslon-fb, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    margin:0;
+}
+
+h2 {
+    font-family: big-caslon-fb, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin:0;
+}
+
+h3 {
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin:0;
+    padding-top: 22px;
+    padding-bottom: 8px;
+}
+
+/* --- Hero --- */
+.hero {
+    width: 1024px;
+    height: 550px;
+    background-size: cover;
+}
+
+.hero-content {
+    padding-top: 240px;
+    font-size: 20px;
+    text-align: right;
+}
+
+/* --- Background --- */
+.background {
+    background-color: white;
+    color: black;
+}
+
+.background h2 {
+    color: black;
+}
+
+.background p {
+    color: black;
+}
+
+.background .inner-block {
+    display: flex;
+}
+
+/* --- Corpus --- */
+.figure {
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    margin: 0 -30px;
+}
