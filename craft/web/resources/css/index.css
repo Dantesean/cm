@@ -7,14 +7,18 @@ body, html, p {
     padding: 0;
     margin: 0;
     font-family: Avenir-Next-Condensed;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
-    line-height: 29px;
+    line-height: 32px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    max-width: 100%;
 }
 
 .clearfix:after {
@@ -29,13 +33,23 @@ a {
     margin: 0 auto;
 }
 
+.inner-block {
+    display: flex;
+}
+
+
 .block {
     padding: 40px 0;
+}
+
+.block-row {
+    flex: 100%;
 }
 
 .block-50 {
     flex: 50%;
     margin-right: 52px;
+    flex-basis: 50%;
 }
 
 h1 {
@@ -61,6 +75,7 @@ h3 {
     margin:0;
     padding-top: 22px;
     padding-bottom: 8px;
+    text-transform: uppercase;
 }
 
 /* --- Hero --- */
@@ -90,14 +105,20 @@ h3 {
     color: black;
 }
 
-.background .inner-block {
-    display: flex;
-}
-
 /* --- Corpus --- */
+
 .figure {
     height: 550px;
     width: 100%;
     background-size: cover;
-    margin: 0 -30px;
+    margin: 90px 0;
+}
+
+/* --- Metrics --- */
+.metrics .inner-block {
+    display: flex;
+}
+
+.metrics .img {
+    margin-left: -30px;
 }

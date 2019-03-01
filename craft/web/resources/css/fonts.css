@@ -9,3 +9,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Avenir-Next-Condensed';
+    src: url('fonts/AvenirNextCondensed-Bold.eot');
+    src: url('fonts/AvenirNextCondensed-Bold.eot') format('embedded-opentype'),
+    url('fonts/AvenirNextCondensed-Bold.woff') format('woff'),
+    url('fonts/AvenirNextCondensed-Bold.woff2') format('woff2'),
+    url('fonts/AvenirNextCondensed-Bold.svg') format('svg'),
+    url('fonts/AvenirNextCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
