@@ -5,9 +5,11 @@
         {% if block.type == "hero" %}
             <div class="inner-content">
                 <div class="hero" style="background-image: url({{ block.image.one().url }})">
-                    <div class="hero-content">
-                        <h1>{{ entry.title }}</h1>
-                        <h3>{{ block.subtitle }}</h3>
+                    <div data-aos="fade-left">
+                        <div class="hero-content">
+                            <h1>{{ entry.title }}</h1>
+                            <h3>{{ block.subtitle }}</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,10 @@
                     </div>
                     <div class="inner-block">
                         <div class="block-row">
-                            <img src="{{ block.image.one().url }}" alt="Figure 1">
+                            <div data-aos="fade-up"
+                                 data-aos-anchor-placement="top-bottom">
+                                <img src="{{ block.image.one().url }}" alt="Figure 1">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +64,10 @@
                     <div class="block">
                         <div class="inner-block">
                             <div class="block-50">
-                                <img src="{{ block.figure1.one().url }}" alt="Figure 2">
+                                <div data-aos="fade-right"
+                                     data-aos-easing="ease-in-sine">
+                                    <img src="{{ block.figure1.one().url }}" alt="Figure 2">
+                                </div>
                             </div>
                             <div class="block-50">
                                 <h2>{{ block.titel }}</h2>
@@ -71,5 +79,48 @@
                 </div>
             </div>
         {% endif %}
+
+        {% if block.type == "regression" %}
+            <div class="inner-content">
+                <div class="block">
+                    <h2>{{ block.titel }}</h2>
+                    <div class="inner-block">
+                        <div class="block-row">
+                            <h3>{{ block.subtitel1 }}</h3>
+                            <p>{{ block.text1 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="regression">
+                <div class="inner-content">
+                    <div class="block">
+                        <div data-aos="flip-down">
+                            <div class="inner-block">
+                                <div class="block-50">
+                                    <img src="{{ block.figure1.one().url }}" alt="Pop Music Regression Analysis">
+                                </div>
+                                <div class="block-50">
+                                    <img src="{{ block.figure2.one().url }}" alt="The Neptunes Regression Analysis">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-content">
+                <div class="block">
+                    <div class="inner-block">
+                        <div class="block-row">
+                            <h3>{{ block.subtitel2 }}</h3>
+                            <p>{{ block.text2 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
     {% endfor %}
 {% endblock %}

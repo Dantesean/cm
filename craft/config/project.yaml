@@ -1,4 +1,4 @@
-dateModified: 1551441773
+dateModified: 1551889642
 email:
   fromEmail: dante@includable.com
   fromName: CM
@@ -302,6 +302,177 @@ matrixBlockTypes:
     handle: background
     name: 'Background section'
     sortOrder: 2
+  936bd2e7-19ad-446b-b62f-0508c0f9c335:
+    field: ef1c595f-15ed-49fe-826e-e35e7255fb33
+    fieldLayouts:
+      edddd905-086a-4489-8949-052a4821a763:
+        tabs:
+          -
+            fields:
+              2d8cd688-2ee0-4f9a-a88b-3d84a94e38ee:
+                required: false
+                sortOrder: 3
+              333a7bb8-7150-450d-a8a1-8e4e784e104e:
+                required: false
+                sortOrder: 2
+              3df1bc69-e5e7-4084-9107-4bf9e7a6fd99:
+                required: false
+                sortOrder: 7
+              e25eba1e-6922-42cc-8733-c826ab86422a:
+                required: false
+                sortOrder: 5
+              e2d147fb-457a-45bb-8bd1-856920ee6228:
+                required: false
+                sortOrder: 4
+              e3dcf412-794f-406d-bb0f-068057410311:
+                required: false
+                sortOrder: 6
+              fdf14ff8-5fbe-4e6c-8187-50b084ac11c4:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      2d8cd688-2ee0-4f9a-a88b-3d84a94e38ee:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text1
+        instructions: ''
+        name: 'Text 1'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      333a7bb8-7150-450d-a8a1-8e4e784e104e:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel1
+        instructions: ''
+        name: 'Subtitel 1'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      3df1bc69-e5e7-4084-9107-4bf9e7a6fd99:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text2
+        instructions: ''
+        name: 'Text 2'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      e25eba1e-6922-42cc-8733-c826ab86422a:
+        contentColumnType: string
+        fieldGroup: null
+        handle: figure2
+        instructions: ''
+        name: 'Figure 2'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      e2d147fb-457a-45bb-8bd1-856920ee6228:
+        contentColumnType: string
+        fieldGroup: null
+        handle: figure1
+        instructions: ''
+        name: 'Figure 1'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      e3dcf412-794f-406d-bb0f-068057410311:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel2
+        instructions: ''
+        name: 'Subtitel 2'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      fdf14ff8-5fbe-4e6c-8187-50b084ac11c4:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titel
+        instructions: ''
+        name: Titel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: regression
+    name: Regression
+    sortOrder: 5
   d83834e7-c22b-4cce-8f0f-f8c828cee4e2:
     field: ef1c595f-15ed-49fe-826e-e35e7255fb33
     fieldLayouts:

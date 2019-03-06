@@ -4,8 +4,8 @@
     <list default="true" id="927bc1c1-071b-4453-9dc8-c52bae24079d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft/config/project.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/craft/config/project.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craft/templates/_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/craft/templates/_layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/craft/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craft/web/resources/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/craft/web/resources/css/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft/web/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/craft/web/resources/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/r/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/r/main.R" afterDir="false" />
     </list>
@@ -20,23 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-              <folding>
-                <element signature="e#165#223#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="536">
+              <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+            <state relative-caret-position="761">
+              <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/templates/_layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="675">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -62,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/config/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="105">
               <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="e#6#236#0#PHP" expanded="true" />
@@ -95,11 +92,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/craft/templates/_layout.html" />
         <option value="$PROJECT_DIR$/craft/.env" />
         <option value="$PROJECT_DIR$/craft/web/resources/css/fonts.css" />
-        <option value="$PROJECT_DIR$/craft/templates/index.html" />
+        <option value="$PROJECT_DIR$/craft/templates/_layout.html" />
         <option value="$PROJECT_DIR$/craft/web/resources/css/index.css" />
+        <option value="$PROJECT_DIR$/craft/templates/index.html" />
       </list>
     </option>
   </component>
@@ -256,18 +253,19 @@
       <option name="presentableId" value="Default" />
       <updated>1551274936458</updated>
       <workItem from="1551274937778" duration="1075000" />
-      <workItem from="1551351647056" duration="10742000" />
+      <workItem from="1551351647056" duration="12459000" />
+      <workItem from="1551888312497" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11817000" />
+    <option name="totallyTimeSpent" value="14841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1556" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25297225" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25627476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,14 +298,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/templates/_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="675">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/config/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="105">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="e#6#236#0#PHP" expanded="true" />
@@ -322,27 +327,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
+    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="761">
+          <caret line="132" column="13" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding>
-            <element signature="e#165#223#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+        <state relative-caret-position="536">
+          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
         </state>
       </provider>
     </entry>

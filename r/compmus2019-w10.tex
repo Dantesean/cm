@@ -1,0 +1,483 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Week 10 · Key and Chord Estimation},
+            pdfauthor={John Ashley Burgoyne},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Week 10 · Key and Chord Estimation}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{John Ashley Burgoyne}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{6 March 2019}
+
+
+\begin{document}
+\maketitle
+
+\hypertarget{set-up}{%
+\subsection{Set-up}\label{set-up}}
+
+Install the new \texttt{compmus} package by running
+\texttt{devtools::install\_github(\textquotesingle{}jaburgoyne/compmus\textquotesingle{})}.
+Simplify your \texttt{spotify.R} to hold only your credentials.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.2.1 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.1.0       v purrr   0.3.1  
+## v tibble  2.0.1       v dplyr   0.8.0.1
+## v tidyr   0.8.3       v stringr 1.4.0  
+## v readr   1.3.1       v forcats 0.4.0
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tibble' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tidyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'readr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'purrr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'stringr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'forcats' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(spotifyr)}
+\KeywordTok{library}\NormalTok{(compmus)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'spotify.R'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{tonal-templates}{%
+\subsection{Tonal Templates}\label{tonal-templates}}
+
+The focus of the readings this week were chord and key estimation. One
+set of standard templates is below: 1--0 coding for the chord templates
+and the Krumhansl--Kessler key profiles.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{circshift <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(v, n) \{}\ControlFlowTok{if}\NormalTok{ (n }\OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) v }\ControlFlowTok{else} \KeywordTok{c}\NormalTok{(}\KeywordTok{tail}\NormalTok{(v, n), }\KeywordTok{head}\NormalTok{(v, }\OperatorTok{-}\NormalTok{n))\}}
+                                    
+    \CommentTok{# C     C#    D     Eb    E     F     F#    G     Ab    A     Bb    B }
+\NormalTok{major_chord <-}\StringTok{ }
+\StringTok{    }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{)}
+\NormalTok{minor_chord <-}\StringTok{ }
+\StringTok{    }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{)}
+\NormalTok{seventh_chord <-}\StringTok{ }
+\StringTok{    }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{0}\NormalTok{,    }\DecValTok{1}\NormalTok{,    }\DecValTok{0}\NormalTok{)}
+
+\NormalTok{major_key <-}\StringTok{ }
+\StringTok{    }\KeywordTok{c}\NormalTok{(}\FloatTok{6.35}\NormalTok{, }\FloatTok{2.23}\NormalTok{, }\FloatTok{3.48}\NormalTok{, }\FloatTok{2.33}\NormalTok{, }\FloatTok{4.38}\NormalTok{, }\FloatTok{4.09}\NormalTok{, }\FloatTok{2.52}\NormalTok{, }\FloatTok{5.19}\NormalTok{, }\FloatTok{2.39}\NormalTok{, }\FloatTok{3.66}\NormalTok{, }\FloatTok{2.29}\NormalTok{, }\FloatTok{2.88}\NormalTok{)}
+\NormalTok{minor_key <-}
+\StringTok{    }\KeywordTok{c}\NormalTok{(}\FloatTok{6.33}\NormalTok{, }\FloatTok{2.68}\NormalTok{, }\FloatTok{3.52}\NormalTok{, }\FloatTok{5.38}\NormalTok{, }\FloatTok{2.60}\NormalTok{, }\FloatTok{3.53}\NormalTok{, }\FloatTok{2.54}\NormalTok{, }\FloatTok{4.75}\NormalTok{, }\FloatTok{3.98}\NormalTok{, }\FloatTok{2.69}\NormalTok{, }\FloatTok{3.34}\NormalTok{, }\FloatTok{3.17}\NormalTok{)}
+
+\NormalTok{chord_templates <-}
+\StringTok{    }\KeywordTok{tribble}\NormalTok{(}
+        \OperatorTok{~}\NormalTok{name  , }\OperatorTok{~}\NormalTok{template,}
+        \StringTok{'Gb:7'}\NormalTok{  , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{6}\NormalTok{),}
+        \StringTok{'Gb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{6}\NormalTok{),}
+        \StringTok{'Bb:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_chord,   }\DecValTok{10}\NormalTok{),}
+        \StringTok{'Db:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{1}\NormalTok{),}
+        \StringTok{'F:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{5}\NormalTok{),}
+        \StringTok{'Ab:7'}\NormalTok{  , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{8}\NormalTok{),}
+        \StringTok{'Ab:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{8}\NormalTok{),}
+        \StringTok{'C:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{0}\NormalTok{),}
+        \StringTok{'Eb:7'}\NormalTok{  , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{3}\NormalTok{),}
+        \StringTok{'Eb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{3}\NormalTok{),}
+        \StringTok{'G:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{7}\NormalTok{),}
+        \StringTok{'Bb:7'}\NormalTok{  , }\KeywordTok{circshift}\NormalTok{(seventh_chord, }\DecValTok{10}\NormalTok{),}
+        \StringTok{'Bb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_chord,   }\DecValTok{10}\NormalTok{),}
+        \StringTok{'D:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{2}\NormalTok{),}
+        \StringTok{'F:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{5}\NormalTok{),}
+        \StringTok{'F:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{5}\NormalTok{),}
+        \StringTok{'A:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{9}\NormalTok{),}
+        \StringTok{'C:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{0}\NormalTok{),}
+        \StringTok{'C:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{0}\NormalTok{),}
+        \StringTok{'E:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{4}\NormalTok{),}
+        \StringTok{'G:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{7}\NormalTok{),}
+        \StringTok{'G:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{7}\NormalTok{),}
+        \StringTok{'B:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_chord,   }\DecValTok{11}\NormalTok{),}
+        \StringTok{'D:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{2}\NormalTok{),}
+        \StringTok{'D:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{2}\NormalTok{),}
+        \StringTok{'F#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{6}\NormalTok{),}
+        \StringTok{'A:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{9}\NormalTok{),}
+        \StringTok{'A:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{9}\NormalTok{),}
+        \StringTok{'C#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{1}\NormalTok{),}
+        \StringTok{'E:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord,  }\DecValTok{4}\NormalTok{),}
+        \StringTok{'E:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,    }\DecValTok{4}\NormalTok{),}
+        \StringTok{'G#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{8}\NormalTok{),}
+        \StringTok{'B:7'}\NormalTok{   , }\KeywordTok{circshift}\NormalTok{(seventh_chord, }\DecValTok{11}\NormalTok{),}
+        \StringTok{'B:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_chord,   }\DecValTok{11}\NormalTok{),}
+        \StringTok{'D#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_chord,    }\DecValTok{3}\NormalTok{),}
+\NormalTok{)}
+
+\NormalTok{key_templates <-}
+\StringTok{    }\KeywordTok{tribble}\NormalTok{(}
+        \OperatorTok{~}\NormalTok{name    , }\OperatorTok{~}\NormalTok{template,}
+        \StringTok{'Gb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{6}\NormalTok{),}
+        \StringTok{'Bb:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_key, }\DecValTok{10}\NormalTok{),}
+        \StringTok{'Db:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{1}\NormalTok{),}
+        \StringTok{'F:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{5}\NormalTok{),}
+        \StringTok{'Ab:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{8}\NormalTok{),}
+        \StringTok{'C:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{0}\NormalTok{),}
+        \StringTok{'Eb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{3}\NormalTok{),}
+        \StringTok{'G:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{7}\NormalTok{),}
+        \StringTok{'Bb:maj'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(major_key, }\DecValTok{10}\NormalTok{),}
+        \StringTok{'D:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{2}\NormalTok{),}
+        \StringTok{'F:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{5}\NormalTok{),}
+        \StringTok{'A:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{9}\NormalTok{),}
+        \StringTok{'C:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{0}\NormalTok{),}
+        \StringTok{'E:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{4}\NormalTok{),}
+        \StringTok{'G:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{7}\NormalTok{),}
+        \StringTok{'B:min'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(minor_key, }\DecValTok{11}\NormalTok{),}
+        \StringTok{'D:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{2}\NormalTok{),}
+        \StringTok{'F#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{6}\NormalTok{),}
+        \StringTok{'A:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{9}\NormalTok{),}
+        \StringTok{'C#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{1}\NormalTok{),}
+        \StringTok{'E:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key,  }\DecValTok{4}\NormalTok{),}
+        \StringTok{'G#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{8}\NormalTok{),}
+        \StringTok{'B:maj'}\NormalTok{ , }\KeywordTok{circshift}\NormalTok{(major_key, }\DecValTok{11}\NormalTok{),}
+        \StringTok{'D#:min'}\NormalTok{, }\KeywordTok{circshift}\NormalTok{(minor_key,  }\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{chordograms-and-keygrams}{%
+\subsection{Chordograms and Keygrams}\label{chordograms-and-keygrams}}
+
+Armed with these templates, we can make chordograms and keygrams for
+individual pieces. Similar to previous weeks, we start by choosing a
+level of hierarchy and then summarise the chroma features a that level.
+Higher levels like \texttt{section} are more appropriate for key
+profiles; lower levels like \texttt{beat} are more appropriate for chord
+profiles.
+
+The following code fetches the analysis for Zager and Evans's `In the
+Year 2525' (1969).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{twenty_five <-}\StringTok{ }
+\StringTok{    }\KeywordTok{get_tidy_audio_analysis}\NormalTok{(}\StringTok{'5UVsbUV0Kh033cqsZ5sLQi'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{compmus_align}\NormalTok{(sections, segments) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{select}\NormalTok{(sections) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{unnest}\NormalTok{(sections) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}
+        \DataTypeTok{pitches =} 
+            \KeywordTok{map}\NormalTok{(segments, }
+\NormalTok{                compmus_summarise, pitches, }
+                \DataTypeTok{method =} \StringTok{'mean'}\NormalTok{, }\DataTypeTok{norm =} \StringTok{'manhattan'}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+The new helper function \texttt{compmus\_match\_pitch\_template}
+compares the averaged chroma vectors against templates to yield a
+chordo- or keygram. The two truck-driver modulations from G-sharp minor
+through A minor to B-flat minor are clear.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{twenty_five }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{compmus_match_pitch_template}\NormalTok{(key_templates, }\StringTok{'euclidean'}\NormalTok{, }\StringTok{'manhattan'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{ggplot}\NormalTok{(}
+        \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ start }\OperatorTok{+}\StringTok{ }\NormalTok{duration }\OperatorTok{/}\StringTok{ }\DecValTok{2}\NormalTok{, }\DataTypeTok{width =}\NormalTok{ duration, }\DataTypeTok{y =}\NormalTok{ name, }\DataTypeTok{fill =}\NormalTok{ d)) }\OperatorTok{+}
+\StringTok{    }\KeywordTok{geom_tile}\NormalTok{() }\OperatorTok{+}
+\StringTok{    }\KeywordTok{scale_fill_viridis_c}\NormalTok{(}\DataTypeTok{option =} \StringTok{'E'}\NormalTok{, }\DataTypeTok{guide =} \StringTok{'none'}\NormalTok{) }\OperatorTok{+}
+\StringTok{    }\KeywordTok{theme_minimal}\NormalTok{() }\OperatorTok{+}
+\StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{'Time (s)'}\NormalTok{, }\DataTypeTok{y =} \StringTok{''}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{compmus2019-w10_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+Once you have the code running, try the following adaptations.
+
+\begin{itemize}
+\tightlist
+\item
+  Try summarising the track at different levels of hierarchy (beats,
+  bars, sections), as well as different combinations of summarisation
+  methods and norms, just as previous weeks. The table below repeats the
+  combinations we have considered.
+\item
+  Try making a chordogram instead of the keygram above.
+\item
+  Replace the key profiles above with Temperley's proposed improvements
+  from the reading this week. (Don't forget to re-run the chunk after
+  you are finished.) Do the revised profiles work any better? Can you
+  think of a way to improve the chord profiles, too?
+\end{itemize}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Domain & Normalisation & Distance & Summary Statistic\tabularnewline
+\midrule
+\endhead
+Non-negative (e.g., chroma) & Manhattan & Manhattan &
+mean\tabularnewline
+& & Aitchison & Aitchison centre\tabularnewline
+& Euclidean & cosine & root mean square\tabularnewline
+& & angular & root mean square\tabularnewline
+& Chebyshev & {[}none{]} & max\tabularnewline
+Full-range (e.g., timbre) & {[}none{]} & Euclidean & mean\tabularnewline
+& Euclidean & cosine & root mean square\tabularnewline
+& & angular & root mean square\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{track-level-summaries}{%
+\subsection{Track-Level Summaries}\label{track-level-summaries}}
+
+Several students have asked how to incorporate the low-level audio
+analysis features at the playlist level. Here is one strategy for doing
+so, which we will extend next week. As an example, let's consider the
+difference between Spotify's `Sound of' playlists for bebop and big
+band.
+
+After loading the playlists, we can use the helper function
+\texttt{add\_audio\_analysis} to fetch the low-level features for every
+track. Adding audio analysis for every track is a slow operation, and so
+for the purposes of this exercise, we will limit ourselves to 30 tracks
+from each playlist. The results makes heavy use of list-columns, which
+are discussed in more detail in the optional \texttt{purrr} exercise on
+DataCamp.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bebop <-}
+\StringTok{    }\KeywordTok{get_playlist_audio_features}\NormalTok{(}
+        \StringTok{'thesoundsofspotify'}\NormalTok{, }
+        \StringTok{'55s8gstHcaCyfU47mQgLrB'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{slice}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{30}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{add_audio_analysis}\NormalTok{()}
+\NormalTok{bigband <-}
+\StringTok{    }\KeywordTok{get_playlist_audio_features}\NormalTok{(}
+        \StringTok{'thesoundsofspotify'}\NormalTok{, }
+        \StringTok{'2cjIvuw4VVOQSeUAZfNiqY'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{slice}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{30}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{add_audio_analysis}\NormalTok{()}
+\NormalTok{jazz <-}
+\StringTok{    }\NormalTok{bebop }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{genre =} \StringTok{"Bebop"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{bind_rows}\NormalTok{(bigband }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{genre =} \StringTok{"Big Band"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+For non-vector features, we can use the \texttt{summarise\_at} command
+to collect summary statistics like mean and standard deviation.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{jazz }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}
+        \DataTypeTok{sections =} 
+            \KeywordTok{map}\NormalTok{(}
+\NormalTok{                sections, }
+\NormalTok{                summarise_at, }
+                \KeywordTok{vars}\NormalTok{(tempo, loudness, duration), }
+                \KeywordTok{list}\NormalTok{(}\DataTypeTok{section_mean =}\NormalTok{ mean, }\DataTypeTok{section_sd =}\NormalTok{ sd))) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{unnest}\NormalTok{(sections) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{ggplot}\NormalTok{(}
+        \KeywordTok{aes}\NormalTok{(}
+            \DataTypeTok{x =}\NormalTok{ tempo, }
+            \DataTypeTok{y =}\NormalTok{ tempo_section_sd, }
+            \DataTypeTok{colour =}\NormalTok{ genre, }
+            \DataTypeTok{alpha =}\NormalTok{ loudness)) }\OperatorTok{+}
+\StringTok{    }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{size =}\NormalTok{ duration }\OperatorTok{/}\StringTok{ }\DecValTok{60}\NormalTok{)) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_rug}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{theme_minimal}\NormalTok{() }\OperatorTok{+}
+\StringTok{    }\KeywordTok{ylim}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{5}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{labs}\NormalTok{(}
+        \DataTypeTok{x =} \StringTok{'Mean Tempo (bpm)'}\NormalTok{, }
+        \DataTypeTok{y =} \StringTok{'SD Tempo'}\NormalTok{, }
+        \DataTypeTok{colour =} \StringTok{'Genre'}\NormalTok{, }
+        \DataTypeTok{size =} \StringTok{'Duration (min)'}\NormalTok{, }
+        \DataTypeTok{alpha =} \StringTok{'Volume (dBFS)'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 10 rows containing missing values (geom_point).
+\end{verbatim}
+
+\includegraphics{compmus2019-w10_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+When working with vector-valued features like chroma or timbre, we need
+to use functions from the previous weeks. Here is an example of
+comparing average timbre coefficients in bebop and big band. Coefficient
+6 looks like the most promising marker distinguishing these genres, but
+we should verify that with cepstrograms and listening tests of specific
+pieces, supported by the Spotify documentation for its timbre features.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{jazz }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}
+        \DataTypeTok{timbre =}
+            \KeywordTok{map}\NormalTok{(}
+\NormalTok{                segments,}
+\NormalTok{                compmus_summarise,}
+\NormalTok{                timbre,}
+                \DataTypeTok{method =} \StringTok{'mean'}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select}\NormalTok{(genre, timbre) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\NormalTok{compmus_gather_timbre }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ basis, }\DataTypeTok{y =}\NormalTok{ value, }\DataTypeTok{fill =}\NormalTok{ genre)) }\OperatorTok{+}
+\StringTok{    }\KeywordTok{geom_violin}\NormalTok{() }\OperatorTok{+}
+\StringTok{    }\KeywordTok{scale_fill_viridis_d}\NormalTok{() }\OperatorTok{+}
+\StringTok{    }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{'Spotify Timbre Coefficients'}\NormalTok{, }\DataTypeTok{y =} \StringTok{''}\NormalTok{, }\DataTypeTok{fill =} \StringTok{'Genre'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{compmus2019-w10_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+
+\end{document}
