@@ -47,10 +47,36 @@ img {
     flex: 100%;
 }
 
+.block-40 {
+    flex: 40%;
+    flex-basis: 40%;
+}
+
 .block-50 {
     flex: 50%;
     margin-right: 52px;
     flex-basis: 50%;
+}
+
+.block-60 {
+    flex: 60%;
+    flex-basis: 60%;
+}
+
+.button {
+    padding-top: 20px;
+}
+
+input[type=button] {
+    background: #00C9F8;
+    border-radius: 6px;
+    font-size: 22px;
+    color: #001A29;
+    padding: 10px 15px;
+    font-family: big-caslon-fb, serif;
+    font-style: normal;
+    font-weight: 600;
+    border: none;
 }
 
 h1 {
@@ -130,5 +156,10 @@ h3 {
 }
 
 .regression img {
+    width: 100%;
+}
+
+/* --- Outliers --- */
+.outliers img {
     width: 100%;
 }

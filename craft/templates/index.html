@@ -122,5 +122,29 @@
             </div>
         {% endif %}
 
+        {% if block.type == "outliers" %}
+            <div class="inner-content">
+                <div class="block">
+                    <div class="inner-block">
+                        <div class="block-50">
+                            <img id="chromagram" src="{{ block.figure1.one().url }}">
+                        </div>
+                        <div class="block-50">
+                            <h2>{{ block.titel }}</h2>
+                            <h3>{{ block.subtitel }}</h3>
+                            <p>{{ block.text }}</p>
+                            <div class="button"><input type="button" onclick="pictureChange()" value="Change Chromogram"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function pictureChange()
+                {
+                    document.getElementById('chromagram').src="{{ block.figure2.one().url }}";
+                }
+            </script>
+        {% endif %}
+
     {% endfor %}
 {% endblock %}

@@ -4,6 +4,7 @@ utilize <- function(){
   library(spotifyr)
   library(ggplot2)
   library(anytime)
+  library(compmus)
   if(!exists("get_release_date", mode="function")){ 
     source("get_release_date.R")
   }

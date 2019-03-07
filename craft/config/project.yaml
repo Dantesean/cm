@@ -1,4 +1,4 @@
-dateModified: 1551889642
+dateModified: 1551987486
 email:
   fromEmail: dante@includable.com
   fromName: CM
@@ -576,6 +576,136 @@ matrixBlockTypes:
     handle: corpus
     name: Corpus
     sortOrder: 3
+  dffc5577-b66e-4aaf-858b-0f32b567bdba:
+    field: ef1c595f-15ed-49fe-826e-e35e7255fb33
+    fieldLayouts:
+      ddda4170-ce60-4929-963f-7e953bd85fb1:
+        tabs:
+          -
+            fields:
+              0040ceb6-646d-4500-9022-4e72d1a28c70:
+                required: false
+                sortOrder: 2
+              06dffc34-6a98-45d0-9d06-ad4f7d0c557d:
+                required: false
+                sortOrder: 1
+              29bb91d2-c55c-4027-8f16-6bfda6aaa749:
+                required: false
+                sortOrder: 5
+              7367ca71-8f80-43d9-b947-e5dd9cda09d8:
+                required: false
+                sortOrder: 3
+              99f09b7f-2f63-40f0-97ec-fb6546c0604c:
+                required: false
+                sortOrder: 4
+            name: Content
+            sortOrder: 1
+    fields:
+      0040ceb6-646d-4500-9022-4e72d1a28c70:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel
+        instructions: ''
+        name: Subtitel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      06dffc34-6a98-45d0-9d06-ad4f7d0c557d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titel
+        instructions: ''
+        name: Titel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      29bb91d2-c55c-4027-8f16-6bfda6aaa749:
+        contentColumnType: string
+        fieldGroup: null
+        handle: figure2
+        instructions: ''
+        name: 'Figure 2'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      7367ca71-8f80-43d9-b947-e5dd9cda09d8:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text
+        instructions: ''
+        name: Text
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      99f09b7f-2f63-40f0-97ec-fb6546c0604c:
+        contentColumnType: string
+        fieldGroup: null
+        handle: figure1
+        instructions: ''
+        name: 'Figure 1'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: outliers
+    name: Outliers
+    sortOrder: 6
 plugins:
   redactor:
     edition: standard
