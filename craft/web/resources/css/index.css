@@ -48,18 +48,15 @@ img {
 }
 
 .block-40 {
-    flex: 40%;
     flex-basis: 40%;
 }
 
 .block-50 {
-    flex: 50%;
     margin-right: 52px;
     flex-basis: 50%;
 }
 
 .block-60 {
-    flex: 60%;
     flex-basis: 60%;
 }
 
@@ -107,7 +104,6 @@ h3 {
 
 /* --- Hero --- */
 .hero {
-    width: 1024px;
     height: 550px;
     background-size: cover;
 }
@@ -162,4 +158,14 @@ h3 {
 /* --- Outliers --- */
 .outliers img {
     width: 100%;
+}
+
+@media(max-width: 948px) {
+    .inner-block {
+        display: block;
+    }
+
+    .metrics .inner-block {
+        display: block;
+    }
 }

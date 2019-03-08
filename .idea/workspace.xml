@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="927bc1c1-071b-4453-9dc8-c52bae24079d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craft/config/project.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/craft/config/project.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/craft/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/craft/web/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/craft/web/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r/main.R" beforeDir="false" afterPath="$PROJECT_DIR$/r/main.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r/spotify.R" beforeDir="false" afterPath="$PROJECT_DIR$/r/spotify.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r/util.R" beforeDir="false" afterPath="$PROJECT_DIR$/r/util.R" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
-              <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="131" column="64" selection-start-line="131" selection-start-column="64" selection-end-line="131" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -33,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -87,6 +83,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>display: flex</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,8 +97,8 @@
         <option value="$PROJECT_DIR$/craft/.env" />
         <option value="$PROJECT_DIR$/craft/web/resources/css/fonts.css" />
         <option value="$PROJECT_DIR$/craft/templates/_layout.html" />
-        <option value="$PROJECT_DIR$/craft/templates/index.html" />
         <option value="$PROJECT_DIR$/craft/web/resources/css/index.css" />
+        <option value="$PROJECT_DIR$/craft/templates/index.html" />
       </list>
     </option>
   </component>
@@ -167,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,7 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,16 +258,19 @@
       <workItem from="1551351647056" duration="12459000" />
       <workItem from="1551888312497" duration="1551000" />
       <workItem from="1551987663749" duration="1839000" />
+      <workItem from="1551989748005" duration="82000" />
+      <workItem from="1552037006585" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16924000" />
+    <option name="totallyTimeSpent" value="17843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1556" height="1005" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25957727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2661823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -297,6 +301,13 @@
     <entry file="file://$PROJECT_DIR$/craft/.env.example">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/craft/config/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -314,13 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft/web/resources/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/craft/templates/_layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -330,15 +334,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/web/resources/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="105" column="7" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="131" column="64" selection-start-line="131" selection-start-column="64" selection-end-line="131" selection-end-column="64" />
         </state>
       </provider>
     </entry>

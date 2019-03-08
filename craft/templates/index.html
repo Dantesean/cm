@@ -127,21 +127,28 @@
                 <div class="block">
                     <div class="inner-block">
                         <div class="block-50">
-                            <img id="chromagram" src="{{ block.figure1.one().url }}">
+                            <div data-aos="fade-right"
+                                 data-aos-offset="300"
+                                 data-aos-easing="ease-in-sine">
+                                <img id="chromagram" src="{{ block.figure1.one().url }}">
+                            </div>
                         </div>
                         <div class="block-50">
                             <h2>{{ block.titel }}</h2>
                             <h3>{{ block.subtitel }}</h3>
                             <p>{{ block.text }}</p>
-                            <div class="button"><input type="button" onclick="pictureChange()" value="Change Chromogram"></div>
+                            <div class="button"><input type="button" onclick="pictureChange()"
+                                                       value="Change Chromogram"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <script>
-                function pictureChange()
-                {
-                    document.getElementById('chromagram').src="{{ block.figure2.one().url }}";
+                var images = ["{{ block.figure1.one().url }}", "{{ block.figure2.one().url }}"];
+
+                function pictureChange() {
+                    images.reverse();
+                    document.getElementById('chromagram').src = images[0];
                 }
             </script>
         {% endif %}
