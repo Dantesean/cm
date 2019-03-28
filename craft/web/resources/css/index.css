@@ -30,9 +30,11 @@ img {
 
 .inner-content {
     max-width: 1160px;
-    padding: 0 36px;
+    padding: 0 128px;
     margin: 0 auto;
 }
+
+
 
 .inner-block {
     display: flex;
@@ -64,7 +66,7 @@ img {
     padding-top: 20px;
 }
 
-input[type=button] {
+.outlier input {
     background: #00C9F8;
     border-radius: 6px;
     font-size: 22px;
@@ -74,6 +76,8 @@ input[type=button] {
     font-style: normal;
     font-weight: 600;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -95,7 +99,7 @@ h2 {
 h3 {
     font-family: din-condensed, sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     margin:0;
     padding-top: 22px;
     padding-bottom: 8px;
@@ -160,6 +164,46 @@ h3 {
     width: 100%;
 }
 
+/* --- Classification --- */
+.buttons {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.circle-button {
+    display: inline-block;
+}
+.circle-button input {
+    background: #00121C;
+    border-radius: 200px;
+    font-size: 16px;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    font-family: din-condensed, sans-serif;
+    font-style: normal;
+    color: #2E3E47;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.circle-button-active input {
+    color: #00C9F8;
+}
+
+.ssm-specific h3 a {
+    opacity: 0.5;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.ssm-specific h3 a.active {
+    opacity: 1;
+}
+
+/* --- Mobile --- */
 @media(max-width: 948px) {
     .inner-block {
         display: block;
@@ -167,5 +211,9 @@ h3 {
 
     .metrics .inner-block {
         display: block;
+    }
+
+    .inner-content {
+        padding: 0 36px;
     }
 }

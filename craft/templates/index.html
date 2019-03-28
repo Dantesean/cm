@@ -123,22 +123,24 @@
         {% endif %}
 
         {% if block.type == "outliers" %}
-            <div class="inner-content">
-                <div class="block">
-                    <div class="inner-block">
-                        <div class="block-50">
-                            <div data-aos="fade-right"
-                                 data-aos-offset="300"
-                                 data-aos-easing="ease-in-sine">
-                                <img id="chromagram" src="{{ block.figure1.one().url }}">
+            <div class="outlier">
+                <div class="inner-content">
+                    <div class="block">
+                        <div class="inner-block">
+                            <div class="block-50">
+                                <div data-aos="fade-right"
+                                     data-aos-offset="300"
+                                     data-aos-easing="ease-in-sine">
+                                    <img id="chromagram" src="{{ block.figure1.one().url }}">
+                                </div>
                             </div>
-                        </div>
-                        <div class="block-50">
-                            <h2>{{ block.titel }}</h2>
-                            <h3>{{ block.subtitel }}</h3>
-                            <p>{{ block.text }}</p>
-                            <div class="button"><input type="button" onclick="pictureChange()"
-                                                       value="Change Chromogram"></div>
+                            <div class="block-50">
+                                <h2>{{ block.titel }}</h2>
+                                <h3>{{ block.subtitel }}</h3>
+                                <p>{{ block.text }}</p>
+                                <div class="button"><input type="button" onclick="pictureChange()"
+                                                           value="Change Chromogram"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,6 +151,212 @@
                 function pictureChange() {
                     images.reverse();
                     document.getElementById('chromagram').src = images[0];
+                }
+            </script>
+        {% endif %}
+
+        {% if block.type == "cepstogram" %}
+            <div class="cepstogram">
+                <div class="inner-content">
+                    <div class="block">
+                        <div class="inner-block">
+                            <div class="block-row">
+                                <h2>{{ block.titel }}</h2>
+                                <h3>{{ block.subtitel }}</h3>
+                                <p>{{ block.text1 }}</p>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px;">
+                                <div data-aos="fade-up"
+                                     data-aos-offset="300"
+                                     data-aos-easing="ease-in-sine">
+                                    <img id="cepstogram" src="{{ block.figure.one().url }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px;">
+                                <p>{{ block.text2 }}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if block.type == "classification" %}
+            <div class="classification">
+                <div class="inner-content">
+                    <div class="block">
+                        <div class="inner-block">
+                            <div class="block-50">
+                                <h2>{{ block.titel }}</h2>
+                                <h3>{{ block.subtitel }}</h3>
+                                <p>{{ block.text1 }}</p>
+                            </div>
+                            <div class="block-50">
+                                <div data-aos="fade-left"
+                                     data-aos-offset="300"
+                                     data-aos-easing="ease-in-sine">
+                                    <img src="{{ block.figure1.one().url }}" alt="Random Forest">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px;">
+                                <p>{{ block.text2 }}</p>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px; text-align: center;">
+                                <div class="block-50">
+                                    <div data-aos="fade-up"
+                                         data-aos-offset="300"
+                                         data-aos-easing="ease-in-sine">
+                                        <img id="heatmap-1" src="{{ block.figure2.one().url }}"
+                                             style="max-width: 60vw;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px;">
+                                <p>{{ block.text3 }}</p>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px; text-align: center;">
+                                <div data-aos="fade-up"
+                                     data-aos-offset="300"
+                                     data-aos-easing="ease-in-sine">
+                                    <img id="heatmap-2" src="{{ block.figure3.one().url }}" style="max-width: 60vw;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inner-block">
+                            <div class="block-row" style="padding-top: 40px;">
+                                <p>{{ block.text4 }}</p>
+                            </div>
+                        </div>
+
+                        <div class="inner-block" style="padding-top: 40px; align-items: center;">
+                            <div data-aos="fade-right"
+                                 data-aos-offset="300"
+                                 data-aos-easing="ease-in-sine">
+                                <div class="block-50">
+                                    <img id="plot" src="{{ block.plot1.one().url }}">
+                                    <div class="buttons">
+                                        <div class="block-50" style="text-align: right; margin: 0 -60px;">
+                                            <div class="circle-button circle-button-active"><input type="button"
+                                                                                                   onclick="plotChange(0,this)"
+                                                                                                   value="S"></div>
+                                            <div class="circle-button"><input type="button" onclick="plotChange(1,this)"
+                                                                              value="D"></div>
+                                            <div class="circle-button"><input type="button" onclick="plotChange(2,this)"
+                                                                              value="04"></div>
+                                            <div class="circle-button"><input type="button" onclick="plotChange(3,this)"
+                                                                              value="11"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-50">
+                                <p>{{ block.text5 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var plots = ["{{ block.plot1.one().url }}", "{{ block.plot2.one().url }}", "{{ block.plot3.one().url }}", "{{ block.plot4.one().url }}"]
+
+                function plotChange(plotid, el) {
+                    document.getElementById('plot').src = plots[plotid];
+                    document.getElementsByClassName("circle-button-active")[0].className = "circle-button";
+                    el.parentNode.className = "circle-button circle-button-active";
+                }
+            </script>
+        {% endif %}
+
+        {% if block.type == "clustering" %}
+            <div class="inner-content">
+                <div class="block">
+                    <div class="inner-block">
+                        <div data-aos="fade-right"
+                             data-aos-offset="300"
+                             data-aos-easing="ease-in-sine">
+                            <div class="block-50">
+                                <img id="cluster" src="{{ block.figure.one().url }}">
+                            </div>
+                        </div>
+                        <div class="block-50">
+                            <h2>{{ block.titel }}</h2>
+                            <h3>{{ block.subtitel }}</h3>
+                            <p>{{ block.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if block.type == "ssm" %}
+            <div class="inner-content">
+                <div class="block">
+                    <div class="inner-block">
+                        <h2>{{ block.titel }}</h2>
+                    </div>
+
+                    <div class="inner-block" style="padding-top: 40px;">
+                        <div class="block-50">
+                            <div data-aos="fade-right"
+                                 data-aos-offset="300"
+                                 data-aos-easing="ease-in-sine">
+                                <img id="pitch" src="{{ block.pitch1.one().url }}">
+                                <img id="timbre" src="{{ block.timbre1.one().url }}">
+                            </div>
+                        </div>
+                        <div class="block-50">
+                            <div class="ssm-general">
+                                <h3>{{ block.subtitel }}</h3>
+                                <p>{{ block.mainText }}</p>
+                            </div>
+                            <div class="ssm-specific">
+                                <h3><a id="link0" class="active" onclick="songChange(0,this)">{{ block.song1 }}</a>
+                                    <a id="link1" onclick="songChange(1,this)">{{ block.song2 }}</a>
+                                    <a id="link2" onclick="songChange(2,this)">{{ block.song3 }}</a></h3>
+                                <div id="song0">{{ block.text1 }}</div>
+                                <div id="song1" style="display: none;">{{ block.text2 }}</div>
+                                <div id="song2" style="display: none;">{{ block.text3 }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var pitches = ["{{ block.pitch1.one().url }}", "{{ block.pitch2.one().url }}", "{{ block.pitch3.one().url }}"];
+                var timbres = ["{{ block.timbre1.one().url }}", "{{ block.timbre2.one().url }}", "{{ block.timbre3.one().url }}"];
+
+                var currentSongID = 0;
+
+                function songChange(songid, el) {
+                    document.getElementById('pitch').src = pitches[songid];
+                    document.getElementById('timbre').src = timbres[songid];
+                    document.getElementById("song" + currentSongID).style.display = "none";
+                    document.getElementById("song" + songid).style.display = "block";
+                    document.getElementById("link" + currentSongID).className = "";
+                    document.getElementById("link" + songid).className = "active";
+                    currentSongID = songid;
                 }
             </script>
         {% endif %}
