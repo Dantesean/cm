@@ -376,7 +376,11 @@
                                 <p>{{ block.text2 }}</p>
                             </div>
                             <div class="block-50">
-                                <img id="cluster" src="{{ block.figure.one().url }}">
+                                <div data-aos="fade-left"
+                                     data-aos-offset="300"
+                                     data-aos-easing="ease-in-sine">
+                                    <img id="chordogram" src="{{ block.figure.one().url }}">
+                                </div>
                             </div>
                         </div>
                     </div>
