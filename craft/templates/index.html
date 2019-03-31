@@ -156,7 +156,7 @@
         {% endif %}
 
         {% if block.type == "cepstogram" %}
-            <div class="cepstogram">
+            <div class="cepstogram" id="cepstogram">
                 <div class="inner-content">
                     <div class="block">
                         <div class="inner-block">
@@ -169,7 +169,7 @@
 
                         <div class="inner-block">
                             <div class="block-row" style="padding-top: 40px;">
-                                <div data-aos="fade-up"
+                                <div data-aos="flip-up"
                                      data-aos-offset="300"
                                      data-aos-easing="ease-in-sine">
                                     <img id="cepstogram" src="{{ block.figure.one().url }}">
@@ -289,7 +289,7 @@
         {% endif %}
 
         {% if block.type == "clustering" %}
-            <div class="inner-content">
+            <div class="inner-content" id="clustering">
                 <div class="block">
                     <div class="inner-block">
                         <div data-aos="fade-right"
@@ -361,5 +361,47 @@
             </script>
         {% endif %}
 
+    {% endfor %}
+
+    {% for block in entry.conclusion.all() %}
+        {% if block.type == "chordogram" %}
+            <div class="chordogram">
+                <div class="inner-content">
+                    <div class="block">
+                        <div class="inner-block">
+                            <div class="block-50">
+                                <h2>{{ block.titel }}</h2>
+                                <h3>{{ block.subtitel }}</h3>
+                                <p>{{ block.text1 }}</p>
+                                <p>{{ block.text2 }}</p>
+                            </div>
+                            <div class="block-50">
+                                <img id="cluster" src="{{ block.figure.one().url }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if block.type == "conclusion" %}
+            <div class="background" id="#notes">
+                <div class="inner-content">
+                    <div class="block">
+                        <h2>{{ block.titel }}</h2>
+                        <div class="inner-block">
+                            <div class="block-50">
+                                <h3>{{ block.subtitel1 }}</h3>
+                                <p>{{ block.text1 }}</p>
+                            </div>
+                            <div class="block-50">
+                                <h3>{{ block.subtitel2 }}</h3>
+                                <p>{{ block.text2 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
     {% endfor %}
 {% endblock %}

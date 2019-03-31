@@ -84,25 +84,3 @@ kmeans(nep_clust_juice, 4)
 # were procuded solely by Pharrell, and then there is a smaller cluster on the left that contains all kinds of songs
 # that it was not able to identify. 
 
-# Now, using a heatmap, we are trying to see if clusters exist for the chords using the tracks
-
-nep_clust_chords <-
-  neptunes_key_data %>% 
-  compmus_match_pitch_template(key_templates, 'euclidean', 'manhattan') %>% spread(name, count)
-
-nep_clust_chords_juice <- 
-  recipe(track_name ~
-           C + `C#|Db` + D + `D#|Eb` +
-           E + `F` + `F#|Gb` + G +
-           `G#|Ab` + A + `A#|Bb` + B +
-           c01 + c02 + c03 + c04 + c05 + c06 +
-           c07 + c08 + c09 + c10 + c11 + c12,
-         data = nep_clust) %>% 
-  step_center(all_predictors()) %>%
-  step_scale(all_predictors()) %>%
-  # step_range(all_predictors()) %>% -> If you unmute this, use the manhattan method in the next code chunck 
-  prep(nep_clust %>% mutate(track_name = str_trunc(track_name, 20))) %>%
-  juice %>% 
-  column_to_rownames('track_name')
-
-test <- nep_clust_chords%>%slice(1:20)

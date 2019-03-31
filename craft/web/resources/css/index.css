@@ -13,7 +13,6 @@ body, html, p {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -203,6 +202,16 @@ h3 {
     opacity: 1;
 }
 
+/* --- Chordogram --- */
+
+.chordogram img {
+    width: 100%;
+}
+
+.chordogram .inner-block {
+    align-items: center;
+}
+
 /* --- Mobile --- */
 @media(max-width: 948px) {
     .inner-block {
@@ -217,7 +226,4 @@ h3 {
         padding: 0 36px;
     }
 
-    [data-aos-delay] {
-        transition-delay: 0s !important;
-    }
 }

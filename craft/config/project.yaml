@@ -1,4 +1,4 @@
-dateModified: 1553792664
+dateModified: 1554047862
 email:
   fromEmail: dante@includable.com
   fromName: CM
@@ -7,6 +7,21 @@ fieldGroups:
   87cbc018-76b4-4bf8-aee8-20c5f464fca2:
     name: Homepage
 fields:
+  0c60b6c6-55bb-4fb2-a2df-b45afddef345:
+    contentColumnType: string
+    fieldGroup: 87cbc018-76b4-4bf8-aee8-20c5f464fca2
+    handle: conclusion
+    instructions: ''
+    name: conclusion
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_conclusion}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   ef1c595f-15ed-49fe-826e-e35e7255fb33:
     contentColumnType: string
     fieldGroup: 87cbc018-76b4-4bf8-aee8-20c5f464fca2
@@ -125,6 +140,129 @@ matrixBlockTypes:
     handle: metrics
     name: Metrics
     sortOrder: 4
+  14bb4aac-f899-4aee-8c1e-19469d26aedb:
+    field: 0c60b6c6-55bb-4fb2-a2df-b45afddef345
+    fieldLayouts:
+      e28f3853-92e8-430d-b463-2b75b6ff5c9d:
+        tabs:
+          -
+            fields:
+              23fab606-e983-4aac-807a-e8ee25f619d1:
+                required: false
+                sortOrder: 1
+              ab2de3db-8e04-4f31-b854-cacb2459628b:
+                required: false
+                sortOrder: 3
+              e74e770d-a62d-4067-8a5b-86ba545bac1d:
+                required: false
+                sortOrder: 5
+              f29b699d-ba7f-4e1a-8060-b04b87398f2e:
+                required: false
+                sortOrder: 4
+              ff32d57c-cc05-4c13-99bd-4e71c0f5088d:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      23fab606-e983-4aac-807a-e8ee25f619d1:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titel
+        instructions: ''
+        name: Titel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      ab2de3db-8e04-4f31-b854-cacb2459628b:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text1
+        instructions: ''
+        name: 'Text 1'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      e74e770d-a62d-4067-8a5b-86ba545bac1d:
+        contentColumnType: string
+        fieldGroup: null
+        handle: figure
+        instructions: ''
+        name: Figure
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:528dc12d-3398-4f03-b918-3cf5c5b2ace2'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      f29b699d-ba7f-4e1a-8060-b04b87398f2e:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text2
+        instructions: ''
+        name: 'Text 2'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      ff32d57c-cc05-4c13-99bd-4e71c0f5088d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel
+        instructions: ''
+        name: Subtitel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: chordogram
+    name: Chordogram
+    sortOrder: 1
   205f8b1f-388a-4951-9fd2-1f349a843d3c:
     field: ef1c595f-15ed-49fe-826e-e35e7255fb33
     fieldLayouts:
@@ -1650,6 +1788,121 @@ matrixBlockTypes:
     handle: outliers
     name: Outliers
     sortOrder: 6
+  fb23f45b-c613-4346-a9f2-06c92fc8e56a:
+    field: 0c60b6c6-55bb-4fb2-a2df-b45afddef345
+    fieldLayouts:
+      18ddce10-4686-4fca-b303-ac7415710e3f:
+        tabs:
+          -
+            fields:
+              217fda21-0a73-42d2-a358-4ea0d1a468e4:
+                required: false
+                sortOrder: 3
+              705ea8dd-4806-4c79-86b7-dd2e689999a5:
+                required: false
+                sortOrder: 2
+              af0b110d-d17e-4ebf-8744-39a1afe40dcc:
+                required: false
+                sortOrder: 1
+              d03355c2-fb47-40fd-8d8c-2af7155adc15:
+                required: false
+                sortOrder: 4
+              f4c6d7b9-4342-4ebc-b5f3-f79561437140:
+                required: false
+                sortOrder: 5
+            name: Content
+            sortOrder: 1
+    fields:
+      217fda21-0a73-42d2-a358-4ea0d1a468e4:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text1
+        instructions: ''
+        name: 'Text 1'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      705ea8dd-4806-4c79-86b7-dd2e689999a5:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel1
+        instructions: ''
+        name: 'Subtitel 1'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      af0b110d-d17e-4ebf-8744-39a1afe40dcc:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titel
+        instructions: ''
+        name: Titel
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      d03355c2-fb47-40fd-8d8c-2af7155adc15:
+        contentColumnType: text
+        fieldGroup: null
+        handle: subtitel2
+        instructions: ''
+        name: 'Subtitel 2'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f4c6d7b9-4342-4ebc-b5f3-f79561437140:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text2
+        instructions: ''
+        name: 'Text 2'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: conclusion
+    name: Conclusion
+    sortOrder: 2
 plugins:
   redactor:
     edition: standard
@@ -1665,6 +1918,9 @@ sections:
             tabs:
               -
                 fields:
+                  0c60b6c6-55bb-4fb2-a2df-b45afddef345:
+                    required: false
+                    sortOrder: 2
                   ef1c595f-15ed-49fe-826e-e35e7255fb33:
                     required: false
                     sortOrder: 1
